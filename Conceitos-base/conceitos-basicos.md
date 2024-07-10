@@ -75,3 +75,5 @@ Usado para:
 #### [Funções](../Conceitos-base/Funções/functions.md)
 
 #### [Objetos](../Conceitos-base/Objetos/objetos.md)
+
+#### [DOM](../Conceitos-base/DOM/dom.md)
