@@ -2,9 +2,93 @@
 
 `innerText` e `innerHTML` são propriedades usadas em JavaScript para manipular o conteúdo de elementos HTML. A principal diferença está em como elas interpretam esse conteúdo:
 
-- `innerText`: Pega ou define o **texto puro** dentro de um elemento HTML, ignorando tags e formatações. É como se você selecionasse o texto com o mouse e copiasse. Por exemplo, para um elemento `<h1><b>`This is bold`</b></h1>`, o innerText seria apenas "This is bold".
+## `innerText`
 
-- `innerHTML`: Pega ou define o conteúdo completo de um elemento HTML, incluindo tags e formatação. É como se você copiasse todo o código HTML dentro daquela tag. No mesmo exemplo anterior, o innerHTML seria "`<h1><b>This is bold</b></h1>`".
+-  Pega ou define o **texto puro** dentro de um elemento HTML, ignorando tags e formatações. É como se você selecionasse o texto com o mouse e copiasse. Por exemplo, para um elemento:
+
+```
+<h1><b>This is bold</b></h1>
+```
+  - No JavaScript
+
+```
+const title = document.queryselector('h1')
+title.innerText = 'New text"
+```
+
+   - Retorno
+
+```
+New text
+```
+
+- Ou, caso se use o adction:
+
+```
+const title = document.queryselector('h1')
+title.innerText += ' New text'
+```
+
+- Teremos o retorno
+
+```
+This is bold New text
+```
+
+- Caso se queira iterar por todos os elementos
+
+```
+const text = document.queryselectorAll('p')
+
+text.forEach((text, index) => {
+    text.innerText += `New Text ${index + 1}`
+})
+```
+
+
+## `innerHTML`
+
+-  Pega ou define o conteúdo completo de um elemento HTML, incluindo tags e formatação. É como se você copiasse todo o código HTML dentro daquela tag. No mesmo exemplo anterior:
+
+- No HTML
+
+```
+<h1><b>This is bold</b></h1>
+```
+
+  - No JavaScript
+
+```
+const title = document.queryselector('h1')
+title.innerHTML = 'New text"
+```
+
+- Teremos o retorno teremos a tag HTML completa
+
+```
+<h1><b>New text</b></h1>
+```
+
+- Caso seja necessário criar uma tag inteira
+
+```
+const div = document.querySeletor('.content')
+const numbers = [1, 2, 3]
+
+numbers.forEach(number => {
+    div.innerHTML += `<p>${number}</p>`
+})
+```
+
+- No retorno teremos:
+
+```
+<div class="content">
+   <p>1</p>
+   <p>2</p>
+   <p>3</p>
+</div>
+```
 
 Aqui está uma tabela resumindo as diferenças:
 
