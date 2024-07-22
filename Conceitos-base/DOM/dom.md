@@ -46,3 +46,17 @@ Com o **DOM** em suas mãos, você estará pronto para criar páginas web que im
 - [classList](../DOM/manipulacao-HTML/classList.md)
 
 - [style](../DOM/manipulacao-HTML/style.md)
+
+#### Eventos
+
+- [Parents](../DOM/Eventos/parents.md)
+
+- [addEventListener](../DOM/Eventos/addEventListiner.md)
+
+- [Adicionando e Removendo eventos](../DOM/Eventos/adicionando-removendo-itens.md)
+
+- [Event bubbling](../DOM/Eventos/event-bubbling.md)
+
+- [Event delegation](../DOM/Eventos/event-delegation.md)
+
+- [Outros Eventos](../DOM/Eventos/outros-ventos.md)
