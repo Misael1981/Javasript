@@ -60,3 +60,13 @@ Com o **DOM** em suas mãos, você estará pronto para criar páginas web que im
 - [Event delegation](../DOM/Eventos/event-delegation.md)
 
 - [Outros Eventos](../DOM/Eventos/outros-ventos.md)
+
+#### Formulários
+
+- [Eventos de submit](../DOM/formularios/submitEvent.md)
+
+- [Expressões Regulares](../DOM/formularios/expressoes-regulares.md)
+
+- [validação via JavaScript](../DOM/formularios/validacao.md)
+
+- [Validação na interface do usuário](../DOM/formularios/validacao-usuario.md)
